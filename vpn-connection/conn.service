@@ -1,0 +1,12 @@
+[Unit]
+Description=This service is used to automatically connect to VPN server and open SSH connection to the VMs
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/spring/bin/conn
+Restart=yes
+
+[Install]
+WantedBy=default.target
+

@@ -4,7 +4,7 @@ function connect {
 	
 	readarray -t credentials < ~/Documents/credentials.txt	
 
-	echo ${credentials[3]} | sudo openconnect --protocol nc ${credentials[0]} --user=${credentials[2]} --passwd-on-stdin --servercert ${credentials[4]} -b 
+	echo ${credentials[3]} | sudo openconnect --protocol nc ${credentials[0]} --user=${credentials[2]} --passwd-on-stdin --servercert ${credentials[4]} -b --dtls-local-port=10123 
 
 	}
 
