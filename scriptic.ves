@@ -1,0 +1,2 @@
+#! /bin/bash
+sudo openconnect -c /home/spring/Documents/vesna.bozovic.pfx --key-password='C0re!t' --protocol=nc --servercert sha256:abf0e0f4f18c315054a73ca9bc5d8369eace974ebe5674c5b14fd0e95d381094 https://94.102.233.11
